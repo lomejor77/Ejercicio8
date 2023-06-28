@@ -36,9 +36,9 @@
         android:layout_height="88dp"
         android:layout_marginTop="28dp"
         android:background="#0D47A1"
-        android:hint="@string/texto"
-        android:focusable="false"
         android:ellipsize="marquee"
+        android:focusable="false"
+        android:hint="@string/texto"
         android:marqueeRepeatLimit="marquee_forever"
         android:scrollHorizontally="true"
         android:singleLine="true"
@@ -48,5 +48,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
