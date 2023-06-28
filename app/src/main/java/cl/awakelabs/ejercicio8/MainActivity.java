@@ -2,7 +2,9 @@ package cl.awakelabs.ejercicio8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initListeners() {
-        Button btnStart = findViewById(R.id.btnStart);
-        btnStart.setOnClickListener(View.setOn);
+        Button btnActivity2 = findViewById(R.id.btnStart);
+        btnActivity2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

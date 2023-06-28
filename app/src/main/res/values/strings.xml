@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ejercicio8</string>
     <string name="inicio">Inicio</string>
+    <string name="ir_a_la_actividad_dos">Ir a la actividad dos</string>
 </resources>

@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <Button
+        android:id="@+id/btnGoTo"
+        android:layout_width="248dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="244dp"
+        android:text="Ir a la Pagina"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="248dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="60dp"
+        android:text="Salir"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnGoTo"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btnGoTo"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoTo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
