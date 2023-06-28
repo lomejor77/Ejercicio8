@@ -10,23 +10,43 @@
         android:id="@+id/btnGoTo"
         android:layout_width="248dp"
         android:layout_height="77dp"
-        android:layout_marginTop="244dp"
-        android:text="Ir a la Pagina"
+        android:layout_marginTop="68dp"
+        android:text="@string/ir_a_la_pagina"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/tvMarquesina"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/tvMarquesina"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarquesina" />
 
     <Button
         android:id="@+id/btnExit"
         android:layout_width="248dp"
         android:layout_height="77dp"
-        android:layout_marginTop="60dp"
-        android:text="Salir"
+        android:layout_marginTop="20dp"
+        android:text="@string/salir"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/btnGoTo"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnGoTo"
         app:layout_constraintTop_toBottomOf="@+id/btnGoTo" />
+
+    <TextView
+        android:id="@+id/tvMarquesina"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="28dp"
+        android:background="#0D47A1"
+        android:hint="@string/texto"
+        android:focusable="false"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#616161"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
